@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -47,15 +47,15 @@
                     <div class="close_line close_line1"></div>
                     <div class="close_line close_line2"></div>
                 </div>
-                <form action="./mail.php" method="post" class="form__popup" id="form">
+                <form action="./php/mail.php" method="post" class="form__popup" id="form">
 
                     <div class="form__blank">
-                        <input type="text" class='_req' name="user_name" id="user_name" placeholder="ім'я:">
-                        <input type="tel" class='_req' name="user_phone" id="phoneNumber" placeholder="телефон:" pattern=".{10,}" required>
-                        <input type="text" class='_req' name="adres" id="adress" placeholder="адреса:">
+                        <input type="text" class="_req" name="user_name" id="user_name" placeholder="ім'я:">
+                        <input type="tel" class="_req" name="user_phone" id="phoneNumber" placeholder="телефон:" pattern=".{10,}" required>
+                        <input type="text" class="_req" name="adres" id="adress" placeholder="адреса:">
                         <textarea name="note" id="note" style="resize: none;" placeholder="примітка:"></textarea>
                         <label for="number" style="text-align: center;">кількість:</label>
-                        <input type="number" class='_req' name="number" id="number" list="" step="1" value="0" >
+                        <input type="number" class="_req" name="number" id="number" list="" step="1" value="0" >
                     </div>
                     <div class="form__send">
                         <input type="submit" value="відправити" class="btn__send">
@@ -66,6 +66,6 @@
     </section>
 
 
-    <script src="./javascript.js"></script>
+    <script src="./javascript/javascript.js"></script>
 </body>
 </html>
